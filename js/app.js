@@ -8,6 +8,7 @@ const loadProducts = () => {
 const showProducts = (products) => {
   const allProducts = products.map((pd) => pd);
   for (const product of allProducts) {
+    // fixed image not show 
     const image = product.image;
     const div = document.createElement("div");
     div.classList.add("product");
@@ -76,4 +77,5 @@ const updateTotal = () => {
     getInputValue("total-tax");
   document.getElementById("total").innerText = grandTotal;
 };
+updateTotal();
 loadProducts();
