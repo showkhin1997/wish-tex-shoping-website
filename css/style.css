@@ -6,19 +6,20 @@ body {
 .shop-banner{
   background-color: rgba(250, 226, 255, 0.767);
   text-align: center;
+  margin-bottom: 30px;
 }
 #shop-title{
   color: rgb(97, 97, 255);
   margin-left: 50px;
-  font-weight: 400;
-  font-size: 30px;
-  
+  font-weight: 700;
+  font-size: 40px; 
 }
 #shop-name{
   color: rgb(255, 118, 21);
   font-weight: 900;
-  font-size: 50px;
+  font-size: 70px;
   font-style: italic;
+  text-shadow: 2px 2px 5px gray;
 }
 /* search field style change*/
 #search-field-btn{
@@ -73,13 +74,13 @@ body {
   border: 1px solid rgb(126, 126, 126);
 }
 .product-image {
-  width: 170px;
-  height: 200px;
+  width: 217px;
+  height: 218px;
   box-shadow: 1px 2px 7px rgba(153, 153, 153, 0.404);
   border: none;
 }
 .rating{
-  color: rgba(0, 201, 0, 0.753);
+  color: rgba(0, 168, 0, 1);
   font-weight: 600;
   font-size: 15px;
 }
