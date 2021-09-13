@@ -58,7 +58,7 @@ body {
 }
 /* product card style change */
 .single-product {
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(235, 248, 255);
   padding: 20px;
   margin-left: 20px;
   margin-bottom: 30px;
@@ -73,6 +73,8 @@ body {
 .product-image {
   width: 170px;
   height: 200px;
+  box-shadow: 1px 2px 7px rgba(153, 153, 153, 0.404);
+  border: none;
 }
 .cart {
   width: 350px;
