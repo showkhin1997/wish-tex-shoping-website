@@ -45,7 +45,8 @@ const updatePrice = (id, value) => {
   const convertedOldPrice = getInputValue(id);
   const convertPrice = parseFloat(value);
   const total = convertedOldPrice + convertPrice;
-  document.getElementById(id).innerText = Math.round(total);
+  // format price with two decimals fixed
+  document.getElementById(id).innerText = total.toFixed(2);
 };
 
 // set innerText function
@@ -75,6 +76,10 @@ const updateTotal = () => {
   const grandTotal =
     getInputValue("price") + getInputValue("delivery-charge") +
     getInputValue("total-tax");
+  console.log("price", getInputValue("price"));
+  console.log("delivery-charge", getInputValue("delivery-charge"));
+  console.log("total-tax", getInputValue("total-tax"));
+  console.log("grand total", grandTotal);
   document.getElementById("total").innerText = grandTotal;
 };
 updateTotal();
