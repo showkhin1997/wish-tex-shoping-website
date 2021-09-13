@@ -2,6 +2,7 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
+/* tittle style */
 .shop-banner{
   background-color: rgba(250, 226, 255, 0.767);
   text-align: center;
@@ -77,6 +78,12 @@ body {
   box-shadow: 1px 2px 7px rgba(153, 153, 153, 0.404);
   border: none;
 }
+.rating{
+  color: rgba(0, 201, 0, 0.753);
+  font-weight: 600;
+  font-size: 15px;
+}
+/* cart style */
 .cart {
   width: 350px;
   /* border: 1px solid green; */
