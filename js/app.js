@@ -55,12 +55,7 @@ const updatePrice = (id, value) => {
 // set innerText function
 const setInnerText = (id, value) => {
   // total tax and delivary charge fixed
-  if (id === 'total-tax') {
-    document.getElementById(id).innerText = value.toFixed(2);
-  }
-  else {
-    document.getElementById(id).innerText = value;
-  }
+  document.getElementById(id).innerText = value.toFixed(2);
 };
 
 // update delivery charge and total Tax
@@ -82,6 +77,7 @@ const updateTaxAndCharge = () => {
 
 //grandTotal update function
 const updateTotal = () => {
+  updateTaxAndCharge();
   const grandTotal =
     getInputValue("price") + getInputValue("delivery-charge") +
     getInputValue("total-tax");
